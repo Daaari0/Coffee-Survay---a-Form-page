@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #A67B5B;
+}
+
+#container {
+    /* check im using this palette */
+    background-color: #6F4E37;
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px 120px;
+    border: 1px solid black;
+    border-radius: 1px 30px;
+    font-family: "Roboto", sans-serif;
+    color: #fed8b1;
+}
+
+hr {
+    height: 3px;
+    width: 100%;
+    margin: 30px 0px;
+    background-color: #A67B5B;
+    border: none;
+    border-top: 1px solid black;
+}
+
+header {
+    text-align: center;
+    margin: 10px 0 50px 0;
+}
+
+header>#title {
+    margin: 15px 0;
+    font-size: 60px;
+}
+
+header>#description {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+/* Basic settings for the div elements */
+div {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Info requested title */
+div>h2 {
+    font-size: 23px;
+}
+
+*:focus {
+    box-shadow: 0 0 0 0.25rem #fed8b127;
+    border-radius: 0.5px 5px;
+}
+
+/* Inputs to the right of their label */
+#personal-info input[type="text"],
+#account input[type="email"],
+#account input[type="password"],
+#additional-info input[type="file"] {
+    width: calc(100% - 125px);
+}
+
+/* Other inputs  */
+input[type]:not(input[type="radio"], input[type="checkbox"]),
+textarea,
+select,
+#number,
+#dropdown,
+.input-box {
+    margin-top: 3px;
+    padding-left: 5px;
+    min-height: 30px;
+
+    background-color: #4b3228;
+    color: #f5f6f7;
+    border: none;
+}
+
+#name-label,
+#last-name-label,
+#email-label,
+#password-label,
+#file-label {
+    display: inline-block;
+    width: 120px;
+}
+
+textarea,
+select,
+#number,
+#dropdown {
+    width: 100%;
+    min-height: 30px;
+}
+
+/* Generic colored input box, used for file upload */
+.input-box {
+    line-height: 30px;
+}
+
+
+*::placeholder {
+    color: #fed8b160;
+}
+
+
+#age {
+    display: inline-block;
+    width: fit-content;
+    margin-right: 20px;
+}
+
+#age h2 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#age #number {
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    /* border-right: 20px solid #4b3228; */
+}
+
+#sex {
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    text-align: right;
+}
+
+#sex input[type="radio"] {
+    margin-right: 3px;
+}
+
+#sex>h2 {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+
+#dropdown {
+    border: #f5f6f7 1px solid;
+}
+
+#additional-info input[type="file"] {
+
+    cursor: pointer;
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 60px;
+}
+
+/* Checkbox for policy and submit */
+footer {
+    margin-top: 30px;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+.policy-quest a {
+    color: #ece0db;
+    text-decoration: underline;
+}
+
+.policy-quest a:hover {
+    color: white;
+    transition: 0.7s;
+
+}
+
+/* Submit button/section settings */
+.submit-block {
+    text-align: center;
+}
+
+#submit {
+    width: 50%;
+    font-size: 30px;
+    margin-top: 20px;
+    background-color: #4b3228;
+    color: #f5f6f7;
+    border: 1px solid #f5f6f7;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #f5f6f7;
+    color: #4b3228;
+    border: 1px solid #4b3228;
+    transition: 0.7s;
+}
